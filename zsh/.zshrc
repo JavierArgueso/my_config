@@ -103,8 +103,8 @@ alias vz="nvim ~/.zshrc"
 
 alias clear="clear && neofetch"
 
-alias upd="sudo apt update && sudo apt upgrade -y && clear"
-alias int="sudo apt install"
-alias rem="sudo apt remove"
+alias upd="yay -Syyu && clear"
+alias int="yay -S"
+alias rem="yay -R"
 
 neofetch
