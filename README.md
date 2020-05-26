@@ -24,6 +24,9 @@ Para el correcto funcionamiento de esta configuracion se recomienda el uso de oh
 
 En la carpeta neofetch se encuentra la configuracion de neofetch
 
-Para su correcto funcionamiento hay que instalar w3m-img y imagemagick
+Para su correcto funcionamiento hay que instalar w3m-img (w3m en arch), imagemagick y xdotool
 
 El archivo config.conf debe ir en ~/.config/neofetch/
+
+La carpeta wallpapers debe ir en ~/.local/share
+
