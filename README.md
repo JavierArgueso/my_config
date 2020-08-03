@@ -1,5 +1,6 @@
 # my_config
 
+--------------------------------------------------------------------------------------------------------------
 En la carpeta vim se puede encontrar la configuracion para vim y nvim
 
 El archivo init.vim debe ir en ~/.config/nvim
@@ -16,17 +17,29 @@ space + q --> :q
 
 space + w --> :w
 
+space + Q --> :q!
+
+space + wq --> :wq
+
+---------------------------------------------------------------------------------------------------------------
+
 En la carpeta zsh se puede encontrar el zshrc de configuracion
 
 El archivo .zshrc debe ir en ~
 
-Para el correcto funcionamiento de esta configuracion se recomienda el uso de ohmyzsh
+Para el correcto funcionamiento de esta configuracion es necesario ohmyzsh
+
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+---------------------------------------------------------------------------------------------------------------
 
 En la carpeta neofetch se encuentra la configuracion de neofetch
 
 Para su correcto funcionamiento hay que instalar w3m-img (w3m en arch), imagemagick y xdotool
 
 El archivo config.conf debe ir en ~/.config/neofetch/
+
+---------------------------------------------------------------------------------------------------------------
 
 La carpeta wallpapers debe ir en ~/.local/share
 

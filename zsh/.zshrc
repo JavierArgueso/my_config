@@ -100,11 +100,8 @@ source $ZSH/oh-my-zsh.sh
 
 alias v="nvim"
 alias vz="nvim ~/.zshrc"
+alias vv="nvim /home/javier/.config/nvim/.vimrc"
 
 alias clear="clear && neofetch"
-
-alias upd="yay -Syyu && clear"
-alias int="yay -S"
-alias rem="yay -R"
 
 neofetch
