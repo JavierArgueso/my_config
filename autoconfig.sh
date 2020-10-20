@@ -11,7 +11,7 @@ if (opcion == 1) then
   sudo apt update && sudo apt upgrade -y
 
   echo "\nInstalando programas"
-  sudo apt install neovim neofetch zsh w3m-img imagemagick xdotool git curl
+  sudo apt install neovim neofetch zsh w3m-img imagemagick xdotool git curl bspwm sxhkd
 
 elif (opcion == 2) then
 
@@ -19,7 +19,7 @@ elif (opcion == 2) then
   yay -Syyu
 
   echo "\nInstalando programas"
-  yay -S neovim ufetch zsh xdotool git curl
+  yay -S neovim ufetch zsh xdotool git curl bspwm sxhkd
 
 fi
 
@@ -29,6 +29,7 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 
 echo "\nConfigurando nvim"
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+
 echo "\nCopiando el inicio con Plasma y BSPWM en /usr/share/xsessions"
 sudo cp ./plasmaBSPWM.desktop /usr/share/xsessions/
 
