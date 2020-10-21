@@ -15,11 +15,18 @@ if (opcion == 1) then
 
 elif (opcion == 2) then
 
+  echo "instalando yay"
+  sudo pacman -Syyu
+  sudo pacman -S git base-devel
+  git clone https://aur.archlinux.org/yay.git
+  cd yay
+  makepkg -si
+
   echo "\nActual sistema"
   yay -Syyu
 
   echo "\nInstalando programas"
-  yay -S neovim ufetch zsh xdotool git curl bspwm sxhkd
+  yay -S neovim ufetch zsh xdotool curl bspwm sxhkd
 
 fi
 
@@ -51,5 +58,4 @@ cp ./nvim/.vimrc $HOME/.config/nvim/
 
 echo "\nA continuación se van a instalar los plugins de nvim"
 nvim +PlugInstall
-
 
