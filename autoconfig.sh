@@ -7,6 +7,17 @@ sudo apt update && sudo apt upgrade -y
 echo "\nInstalando programas"
 sudo apt install neovim zsh w3m-img imagemagick xdotool curl bspwm sxhkd rofi htop suckless-tools
 
+# Coniguracion de git
+echo "\nConfigurando git"
+git config --global user.email "javierarguesosoto@gmail.com"
+git config --global user.name "JavierArgueso"
+
+# Widget Desktop
+echo "\nDescargando e instalando el visor de escritorios"
+git clone https://github.com/wsdfhjxc/virtual-desktop-bar.git
+$HOME/virtual-desktop-bar/scripts/install-dependencies-ubuntu.sh
+$HOME/virtual-desktop-bar/scripts/install-applet.sh
+
 # Configuracion de las aplicaciones
 echo "\nConfigurando zsh"
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
