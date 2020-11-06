@@ -1,34 +1,11 @@
 #!/bin/sh
 
-# Comprobacion de sistema
-echo "Introduzca tipo de linux (1. Debian, 2. Arch)"
-read opcion
+# Instalando programas
+echo "\nActualizando sistema"
+sudo apt update && sudo apt upgrade -y
 
-# Actualizacion e instalacion de aplicaciones
-if (opcion == 1) then
-
-  echo "\nActualizando sistema"
-  sudo apt update && sudo apt upgrade -y
-
-  echo "\nInstalando programas"
-  sudo apt install neovim neofetch zsh w3m-img imagemagick xdotool git curl bspwm sxhkd
-
-elif (opcion == 2) then
-
-  echo "instalando yay"
-  sudo pacman -Syyu
-  sudo pacman -S git base-devel
-  git clone https://aur.archlinux.org/yay.git
-  cd yay
-  makepkg -si
-
-  echo "\nActual sistema"
-  yay -Syyu
-
-  echo "\nInstalando programas"
-  yay -S neovim ufetch zsh xdotool curl bspwm sxhkd
-
-fi
+echo "\nInstalando programas"
+sudo apt install neovim zsh w3m-img imagemagick xdotool curl bspwm sxhkd rofi htop suckless-tools
 
 # Configuracion de las aplicaciones
 echo "\nConfigurando zsh"
@@ -59,3 +36,10 @@ cp ./nvim/.vimrc $HOME/.config/nvim/
 echo "\nA continuación se van a instalar los plugins de nvim"
 nvim +PlugInstall
 
+echo "\nAhora es necesario que instale los componentes de Coc"
+echo "coc-texlab"
+echo "coc-python"
+echo "coc-html"
+echo "coc-css"
+echo "coc-json"
+echo "coc-tsserver"
