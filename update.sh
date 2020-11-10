@@ -1,10 +1,16 @@
 #/bin/sh
 
-echo "Actualizando repositorios\n"
+echo "\n#####################################################################"
+echo "Actualizando repositorios"
+echo "#####################################################################\n"
 sudo apt update
 
-echo "\nActualizando paquetes\n"
+echo "\n#####################################################################"
+echo "Actualizando paquetes\n"
+echo "#####################################################################\n"
 sudo apt upgrade -y
 
-echo "\nActualizando paquetes flatpak\n"
+echo "\n#####################################################################"
+echo "Actualizando paquetes flatpak\n"
+echo "#####################################################################\n"
 flatpak update
