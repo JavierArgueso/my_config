@@ -13,6 +13,6 @@ alias vb="nvim ~/.config/bspwm/bspwmrc"
 
 alias clear="clear && ~/my_config/ufetch-ubuntu"
 
-alias upd="sudo apt update && sudo apt upgrade -y"
+alias upd=$HOME/my_config/update.sh
 
 ~/my_config/ufetch-ubuntu
