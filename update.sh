@@ -6,11 +6,11 @@ echo "#####################################################################\n"
 sudo apt update
 
 echo "\n#####################################################################"
-echo "Actualizando paquetes\n"
+echo "Actualizando paquetes"
 echo "#####################################################################\n"
 sudo apt upgrade -y
 
 echo "\n#####################################################################"
-echo "Actualizando paquetes flatpak\n"
+echo "Actualizando paquetes flatpak"
 echo "#####################################################################\n"
 flatpak update
