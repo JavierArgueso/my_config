@@ -18,4 +18,4 @@ flatpak update -y
 echo "\n#####################################################################"
 echo "Actualizando paquetes snap"
 echo "#####################################################################\n"
-sudo snap update
+sudo snap refresh
