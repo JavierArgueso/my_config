@@ -1,0 +1,16 @@
+body {
+  background-color: #2e3440;
+}
+
+.search {
+  background-color: #4c566a;
+  margin: 20px 5px;
+  padding: 5px 30px;
+}
+
+.card {
+  color: #88c0d0;
+  border: solid 2px #88c0d0;
+  margin: 4px 50px;
+  padding: 2px 15px;
+}
