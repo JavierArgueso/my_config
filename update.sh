@@ -8,7 +8,7 @@ sudo apt update
 echo "\n#####################################################################"
 echo "Actualizando paquetes"
 echo "#####################################################################\n"
-sudo apt upgrade -y
+sudo apt dist-upgrade -y
 
 echo "\n#####################################################################"
 echo "Actualizando paquetes flatpak"
