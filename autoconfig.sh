@@ -15,17 +15,17 @@ git config --global user.name "JavierArgueso"
 # Widget Desktop
 echo "\nDescargando e instalando el visor de escritorios"
 git clone https://github.com/wsdfhjxc/virtual-desktop-bar.git
-$HOME/virtual-desktop-bar/scripts/install-dependencies-ubuntu.sh
-$HOME/virtual-desktop-bar/scripts/install-applet.sh
+cd $HOME/virtual-desktop-bar/scripts/
+./install-dependencies-ubuntu.sh
+./install-applet.sh
+cd $HOME
 
 # Configuracion de las aplicaciones
-echo "\nConfigurando zsh"
-sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-
 echo "\nConfigurando nvim"
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 
 echo "\nCopiando el inicio con Plasma y BSPWM en /usr/share/xsessions"
+cd ./my_config
 sudo cp ./plasmaBSPWM.desktop /usr/share/xsessions/
 
 echo "\nCreando carpeta y copiando conguracion de bspwm"
@@ -54,3 +54,10 @@ echo "coc-html"
 echo "coc-css"
 echo "coc-json"
 echo "coc-tsserver"
+
+echo "\nConfigurando zsh"
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+ 
+
+
+

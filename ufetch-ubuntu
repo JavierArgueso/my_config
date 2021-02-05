@@ -6,7 +6,8 @@
 
 # user is already defined
 host="$(hostname)"
-os="$(lsb_release -ds)"
+## os="$(lsb_release -ds)" ## Esto es lo que viene por defecto
+os="$(echo 'Kubuntu')"
 kernel="$(uname -sr)"
 uptime="$(uptime -p | sed 's/up //')"
 packages="$(dpkg -l | wc -l)"
