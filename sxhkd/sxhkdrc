@@ -10,6 +10,19 @@ super + Return
 super + @space
 	rofi -combi-modi window,drun,ssh -theme Pop-Dark -font "Code Nerd Font Mono 10" -show combi -icon-theme "Tela-dark" -show-icons
 
+alt + @space
+	rofi -combi-modi window,drun,ssh -theme Pop-Dark -font "Code Nerd Font Mono 10" -show combi -icon-theme "Tela-dark" -show-icons
+
+super + z
+	rofi -combi-modi window,drun,ssh -theme Pop-Dark -font "Code Nerd Font Mono 10" -show combi -icon-theme "Tela-dark" -show-icons
+
+# Workspace
+# Create project
+super + shift + w
+	ls ~/Workspaces | rofi -show -theme Pop-Dark -dmenu -font "Code Nerd Fort Mono 10" -icon-theme "Tela-dark" -show-icons | xargs -I_ mkdir ~/Workspaces/_
+# Open project
+super + w
+	ls ~/Workspaces | rofi -show -theme Pop-Dark -dmenu -font "Code Nerd Font Mono 10" -icon-theme "Tela-dark" -show-icons | xargs -I_ code ~/Workspaces/_
 # make sxhkd reload its configuration files:
 super + Escape
 	pkill -USR1 -x sxhkd
@@ -18,6 +31,9 @@ super + Escape
 # Firefox
 super + f
 	firefox
+
+super + g
+	google-chrome
 
 #
 # bspwm hotkeys
